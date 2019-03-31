@@ -4,15 +4,15 @@
     <p class="lead">All your eating wants and needs. None of the calories.</p>
   </div>
 </div>
-<br>
+
 <div class="container">
-<h2>Burgers Ordered... yum yum</h2>
+<h5 class="font-weight-bold">BURGERS ORDERED</h5>
 <ul style="list-style-type:square">
   {{#each burgers}}
     {{#unless devoured}}
-    <li class="lead">
-      {{burger_name}}
-      <button class="devour-btn btn btn-secondary btn-sm" id="{{id}}">eat now</button>
+    <li>
+      <p>{{burger_name}}   
+      <button class="devour-btn btn btn-secondary btn-sm" id="{{id}}">eat now</button></p>
     </li>
     {{/unless}}
   {{/each}}
@@ -20,19 +20,19 @@
 
 <br><br>
 
-<h2>Burgers Eaten</h2>
+<h5 class="font-weight-bold">BURGERS EATEN.. YUMMM</h5>
 <ul style="list-style-type:square">
   {{#each burgers}}
     {{#if devoured}}
-    <li class="lead">
-      {{burger_name}}
+    <li>
+      <p>{{burger_name}}</p>
     </li>
     {{/if}}
   {{/each}}
 </ul>
 <br><br>
 
-<h2>Order a Burger Here:</h2>
+<h5 class="font-weight-bold">ORDER HERE</h5>
 <form class="create-form" id="add-order">
 
   <div class="form-group">
@@ -41,3 +41,5 @@
 <input type="submit" value="Order Now" class="btn btn-success btn-lg" style="float: right">
 </form>
 </div>
+
+<br><br><br><br>
